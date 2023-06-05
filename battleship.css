@@ -1,831 +1,801 @@
-html{
-    box-sizing: border-box;
-    background-color: black;
+html {
+  box-sizing: border-box;
+  background-color: black;
 }
-*,*::before,*::after
-{
-    box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
-p{
-    margin: 0%;
-    padding: 0%;
-    
-}
-
-.heading{
-    color: #19c304;
-    text-align: center;
-    font-size: 6em;
-    font-family:fantasy;
-    text-decoration: underline;
-    margin-top: 30px;
-    font-weight: 900;
-    text-shadow: 2px 2px 10px red;
-}
-.bMain{
-    width: 70%;
-    display: grid;
-    grid-template-rows: repeat(5,100px 6px);
-    grid-template-columns: repeat(10, 95px 6px);
-    border: 1px solid #19c304;
-    border: 1px solid transparent;
-    box-shadow: 0px 0px 20px 10px darkslateblue;
-    margin:4% auto;
-    position: relative;
-}
-.secOne{
-    grid-row: span 10 / -1;
-    grid-column: 2 / span 1;
-    background-color: #19c304;
-}
-.secTwo{
-    grid-row: span 10 / -1;
-    grid-column: 4 / span 1;
-    background-color: #19c304;
-}
-.secThree{
-    grid-row: span 10 / -1;
-    grid-column: 6 / span 1;
-    background-color: #19c304;
-}
-.secFour{
-    grid-row: span 10 / -1;
-    grid-column: 8 / span 1;
-    background-color: #19c304;
-}
-.secFive{
-    grid-row: span 10 / -1;
-    grid-column: 10 / span 1;
-    background-color: #19c304;
+p {
+  margin: 0%;
+  padding: 0%;
 }
 
-.secSix{
-    grid-row: span 10 / -1;
-    grid-column: 12 / span 1;
-    background-color: #19c304;
+.heading {
+  color: #19c304;
+  text-align: center;
+  font-size: 6em;
+  font-family: fantasy;
+  text-decoration: underline;
+  margin-top: 30px;
+  font-weight: 900;
+  text-shadow: 2px 2px 10px red;
+}
+.bMain {
+  width: 70%;
+  display: grid;
+  grid-template-rows: repeat(5, 100px 6px);
+  grid-template-columns: repeat(10, 95px 6px);
+  border: 1px solid #19c304;
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 20px 10px darkslateblue;
+  margin: 4% auto;
+  position: relative;
+}
+.secOne {
+  grid-row: span 10 / -1;
+  grid-column: 2 / span 1;
+  background-color: #19c304;
+}
+.secTwo {
+  grid-row: span 10 / -1;
+  grid-column: 4 / span 1;
+  background-color: #19c304;
+}
+.secThree {
+  grid-row: span 10 / -1;
+  grid-column: 6 / span 1;
+  background-color: #19c304;
+}
+.secFour {
+  grid-row: span 10 / -1;
+  grid-column: 8 / span 1;
+  background-color: #19c304;
+}
+.secFive {
+  grid-row: span 10 / -1;
+  grid-column: 10 / span 1;
+  background-color: #19c304;
 }
 
-.secSeven{
-    grid-row: span 10 / -1;
-    grid-column: 14 / span 1;
-    background-color: #19c304;
+.secSix {
+  grid-row: span 10 / -1;
+  grid-column: 12 / span 1;
+  background-color: #19c304;
 }
 
-.secEight{
-    grid-row: span 10 / -1;
-    grid-column: 16 / span 1;
-    background-color: #19c304;
+.secSeven {
+  grid-row: span 10 / -1;
+  grid-column: 14 / span 1;
+  background-color: #19c304;
 }
 
-.secNine{
-    grid-row: span 10 / -1;
-    grid-column: 18 / span 1;
-    background-color: #19c304;
+.secEight {
+  grid-row: span 10 / -1;
+  grid-column: 16 / span 1;
+  background-color: #19c304;
 }
 
-.secTen{
-    grid-row: span 10 / -1;
-    grid-column: 20 / span 1;
-    background-color: #19c304;
+.secNine {
+  grid-row: span 10 / -1;
+  grid-column: 18 / span 1;
+  background-color: #19c304;
 }
 
-
-
-
-.RsecOne{
-    grid-row: 2 / span 1;
-    grid-column:   1 / span 20;
-    background-color: #19c304;
-}
-.RsecTwo{
-    grid-row: 4 / span 1;
-    grid-column: 1 / span 20;
-    background-color: #19c304;
-}
-.RsecThree{
-    grid-row: 6 / span 1;
-    grid-column:1 / span 20;
-    background-color: #19c304;
-}
-.RsecFour{
-    grid-row: 8 / span 1;
-    grid-column: 1 / span 20;
-    background-color: #19c304;
-}
-.RsecFive{
-    grid-row: 10 / span 1;
-    grid-column: 1 / span 20;
-    background-color: #19c304;
+.secTen {
+  grid-row: span 10 / -1;
+  grid-column: 20 / span 1;
+  background-color: #19c304;
 }
 
-
-aside{
-    margin-top: 30px;
+.RsecOne {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 20;
+  background-color: #19c304;
+}
+.RsecTwo {
+  grid-row: 4 / span 1;
+  grid-column: 1 / span 20;
+  background-color: #19c304;
+}
+.RsecThree {
+  grid-row: 6 / span 1;
+  grid-column: 1 / span 20;
+  background-color: #19c304;
+}
+.RsecFour {
+  grid-row: 8 / span 1;
+  grid-column: 1 / span 20;
+  background-color: #19c304;
+}
+.RsecFive {
+  grid-row: 10 / span 1;
+  grid-column: 1 / span 20;
+  background-color: #19c304;
 }
 
+aside {
+  margin-top: 30px;
+}
 
-
-
-.mymain
-{
-    width: 4%;
-    height: auto;
-    border: 1px solid transparent;
-    margin: -17% 20% auto 21%;
-    position: fixed;
-    z-index: -100;
+.mymain {
+  width: 4%;
+  height: auto;
+  border: 1px solid transparent;
+  margin: -17% 20% auto 21%;
+  position: fixed;
+  z-index: -100;
 }
-.outerContainer{
-    width: 60px;
-    height: 60px;
-    border: 3px solid #19c304;
-    border: 3px solid red;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #75b0e7;
-    background-color: black;
-    position: relative;
-    transform: rotateZ(30deg);
+.outerContainer {
+  width: 60px;
+  height: 60px;
+  border: 3px solid #19c304;
+  border: 3px solid red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #75b0e7;
+  background-color: black;
+  position: relative;
+  transform: rotateZ(30deg);
 }
-.innerContainer{
-    width: 30px;
-    height: 30px;
-    border: 3px solid #19c304;
-    border: 3px solid red;
-    border-radius: 50%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.innerContainer {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #19c304;
+  border: 3px solid red;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.deeperConatiner{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #19c304;
-
+.deeperConatiner {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #19c304;
 }
-.pillar{
-    width: 5px;
-    height: 10px;
-    background-color: #19c304;
-    background-color: red;
-    position: absolute;
+.pillar {
+  width: 5px;
+  height: 10px;
+  background-color: #19c304;
+  background-color: red;
+  position: absolute;
 }
-.pillarOne{
-    top: 0%;
-
+.pillarOne {
+  top: 0%;
 }
-.pillarTwo{
-    bottom: 0%;
+.pillarTwo {
+  bottom: 0%;
 }
-.pillarThree{
-    right: 10%;
-    transform: rotateZ(90deg);
+.pillarThree {
+  right: 10%;
+  transform: rotateZ(90deg);
 }
-.pillarFour{
-    left: 10%;
-    transform: rotateZ(90deg);
-
+.pillarFour {
+  left: 10%;
+  transform: rotateZ(90deg);
 }
-.gameContent{
-    position: relative;
+.gameContent {
+  position: relative;
 }
 @keyframes move {
-    from {
-        transform: translateX(0);
-        
-    }
+  from {
+    transform: translateX(0);
+  }
 
-    to {
-        transform: translateX(80vw);
-    }
+  to {
+    transform: translateX(80vw);
+  }
 }
-#animationPlane
-{
-    position: absolute;
-    width: 200px;
-    height: 100px;
-    top: 13%;
-    border: 4px solid darkmagenta;
-    background-image: url("./images/B_24-J.svg");
-    background-size: cover;
-    background-position: center center;
-    animation-name: move;
-    animation-duration: 8s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    z-index: 4;
+#animationPlane {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  top: 13%;
+  border: 4px solid darkmagenta;
+  background-image: url("./images/B_24-J.svg");
+  background-size: cover;
+  background-position: center center;
+  animation-name: move;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 4;
 }
-.thinLine{
-    width: 100%;
-    margin: 0%;
-    position: absolute;
-    background-color:black;
-    top: 0%;
-    height: 100vh;
-    z-index: 100;
+.thinLine {
+  width: 100%;
+  margin: 0%;
+  position: absolute;
+  background-color: black;
+  top: 0%;
+  height: 100vh;
+  z-index: 100;
 }
 
-
-
-.thinmain{
-    border: 1px solid transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.thinmain {
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.thinmain section:nth-child(1){
-    font-size: 8em;
-    text-align: center;
-    color: white;
-    font-family:fantasy;
-    color: #19c304;
-    text-shadow: 2px 3px 10px red;
-
+.thinmain section:nth-child(1) {
+  font-size: 8em;
+  text-align: center;
+  color: white;
+  font-family: fantasy;
+  color: #19c304;
+  text-shadow: 2px 3px 10px red;
 }
-.thinmain section:nth-child(2){
-    width: 40%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+.thinmain section:nth-child(2) {
+  width: 40%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
-img{
-   width: 80%;
-
+img {
+  width: 80%;
 }
 
-
-.third{
-    border: 1px solid transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    padding: 10px;
+.third {
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 10px;
 }
-#myBut{
-    width: 40%;
-    height: 50px;
-    font-size: 2.3em;
-    font-family: cursive;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    background-color: seagreen;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 2px 2px 5px 3px black;
-    cursor: pointer;
-    text-shadow: 1px 1px #19c304;
-}
-
-h1{
-    font-size: 4em;
-    font-weight: 900;
-    
-}
-.playerSelection{
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0%;
-    
-    background-color: black;
-    margin: 0%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: lightcoral;
-    z-index: 10;
-    background-image: url("./images/brett-mit-loechern-nomask.svg");
-    background-position: center center;
-    background-size: cover;
-}
-.playerSec{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 20px;
-    border-radius: 30px;
-    background-color: rgba(0, 0, 0, 0.6);
-
-}
-.inputP{
-    width: 80%;
-    height: 70px;
-}
-input{
-    width: 100%;
-    height: 70px;
-    border-radius: 20px;
-    border: none;
-    text-align: center;
-    font-size: 3em;
-    color: lightcoral;
-}
-.playerButton{
-    width: 40%;
-    height: 50px;
-    border-radius: 20px;
-    font-size: 2em;
-    border: none;
-    margin-top: 20px;
-    color: lightcoral;
-    text-shadow: 0px 2px 2px red;
-    background-color: lightgray;
-    letter-spacing: 10px;
-    cursor: pointer;
+#myBut {
+  width: 40%;
+  height: 50px;
+  font-size: 2.3em;
+  font-family: cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: seagreen;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px 5px 3px black;
+  cursor: pointer;
+  text-shadow: 1px 1px #19c304;
 }
 
-
-.allContainer{
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: scroll;
+h1 {
+  font-size: 4em;
+  font-weight: 900;
 }
-#one{
-    flex: 0 0 100%;
-    transition: all 0.8s;
+.playerSelection {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0%;
+
+  background-color: black;
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: lightcoral;
+  z-index: 10;
+  background-image: url("./images/brett-mit-loechern-nomask.svg");
+  background-position: center center;
+  background-size: cover;
+}
+.playerSec {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.inputP {
+  width: 80%;
+  height: 70px;
+}
+input {
+  width: 100%;
+  height: 70px;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  font-size: 3em;
+  color: lightcoral;
+}
+.playerButton {
+  width: 40%;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 2em;
+  border: none;
+  margin-top: 20px;
+  color: lightcoral;
+  text-shadow: 0px 2px 2px red;
+  background-color: lightgray;
+  letter-spacing: 10px;
+  cursor: pointer;
+}
+
+.allContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+#one {
+  flex: 0 0 100%;
+  transition: all 0.8s;
 }
 
 #two {
-    flex: 0 0 100%;
-    transition: all 0.8s;
-    position: relative;
+  flex: 0 0 100%;
+  transition: all 0.8s;
+  position: relative;
 }
 
 #three {
-    flex: 0 0 100%;
-    transition: all 0.8s;
-
+  flex: 0 0 100%;
+  transition: all 0.8s;
 }
 
-
-.dOne{
-    grid-row: 1/span 1;
-    grid-column: 1/span 1;
-    background-color: black;
+.dOne {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  background-color: black;
 }
 
-.dTwo{
-    grid-row: 1/span 1;
-    grid-column: 3/span 1;
-    background-color: black;
+.dTwo {
+  grid-row: 1 / span 1;
+  grid-column: 3 / span 1;
+  background-color: black;
 }
 
-.dThree{
-    grid-row: 1/span 1;
-    grid-column: 5/span 1;
-    background-color: black;
+.dThree {
+  grid-row: 1 / span 1;
+  grid-column: 5 / span 1;
+  background-color: black;
 }
 
-.dFour{
-    grid-row: 1/span 1;
-    grid-column: 7/span 1;
-    background-color: black;
+.dFour {
+  grid-row: 1 / span 1;
+  grid-column: 7 / span 1;
+  background-color: black;
 }
 
-.dFive{
-    grid-row: 1/span 1;
-    grid-column: 9/span 1;
-    background-color: black;
+.dFive {
+  grid-row: 1 / span 1;
+  grid-column: 9 / span 1;
+  background-color: black;
 }
 
-.dSix{
-    grid-row: 1/span 1;
-    grid-column: 11/span 1;
-    background-color: black;
+.dSix {
+  grid-row: 1 / span 1;
+  grid-column: 11 / span 1;
+  background-color: black;
 }
 
-.dSeven{
-    grid-row: 1/span 1;
-    grid-column: 13/span 1;
-    background-color: black;
+.dSeven {
+  grid-row: 1 / span 1;
+  grid-column: 13 / span 1;
+  background-color: black;
 }
-.deight{
-    grid-row: 1/span 1;
-    grid-column: 15/span 1;
-    background-color: black;
+.deight {
+  grid-row: 1 / span 1;
+  grid-column: 15 / span 1;
+  background-color: black;
 }
-.dNine{
-    grid-row: 1/span 1;
-    grid-column: 17/span 1;
-    background-color: black;
+.dNine {
+  grid-row: 1 / span 1;
+  grid-column: 17 / span 1;
+  background-color: black;
 }
-.dTen{
-    grid-row: 1/span 1;
-    grid-column: 19/span 1;
-    background-color: black;
+.dTen {
+  grid-row: 1 / span 1;
+  grid-column: 19 / span 1;
+  background-color: black;
 }
-.d11{
-    grid-row: 3/span 1;
-    grid-column: 1/span 1;
-    background-color: black;
-}
-
-.d12{
-    grid-row: 3/span 1;
-    grid-column: 3/span 1;
-    background-color: black;
-}
-.d13{
-    grid-row: 3/span 1;
-    grid-column: 5/span 1;
-    background-color: black;
+.d11 {
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 1;
+  background-color: black;
 }
 
-.d14{
-    grid-row: 3/span 1;
-    grid-column: 7/span 1;
-    background-color: black;
+.d12 {
+  grid-row: 3 / span 1;
+  grid-column: 3 / span 1;
+  background-color: black;
 }
-.d15{
-    grid-row: 3/span 1;
-    grid-column: 9/span 1;
-    background-color: black;
-}
-.d16{
-    grid-row: 3/span 1;
-    grid-column: 11/span 1;
-    background-color: black;
+.d13 {
+  grid-row: 3 / span 1;
+  grid-column: 5 / span 1;
+  background-color: black;
 }
 
-.d17{
-    grid-row: 3/span 1;
-    grid-column: 13/span 1;
-    background-color: black;
+.d14 {
+  grid-row: 3 / span 1;
+  grid-column: 7 / span 1;
+  background-color: black;
+}
+.d15 {
+  grid-row: 3 / span 1;
+  grid-column: 9 / span 1;
+  background-color: black;
+}
+.d16 {
+  grid-row: 3 / span 1;
+  grid-column: 11 / span 1;
+  background-color: black;
 }
 
-
-.d18{
-    grid-row: 3/span 1;
-    grid-column: 15/span 1;
-    background-color: black;
-}
-.d19{
-    grid-row: 3/span 1;
-    grid-column: 17/span 1;
-    background-color: black;
+.d17 {
+  grid-row: 3 / span 1;
+  grid-column: 13 / span 1;
+  background-color: black;
 }
 
-.d20{
-    grid-row: 3/span 1;
-    grid-column: 19/span 1;
-    background-color: black;
+.d18 {
+  grid-row: 3 / span 1;
+  grid-column: 15 / span 1;
+  background-color: black;
+}
+.d19 {
+  grid-row: 3 / span 1;
+  grid-column: 17 / span 1;
+  background-color: black;
 }
 
-
-.d21{
-    grid-row: 5/span 1;
-    grid-column: 1/span 1;
-    background-color: black;
-}
-.d22{
-    grid-row: 5/span 1;
-    grid-column: 3/span 1;
-    background-color: black;
+.d20 {
+  grid-row: 3 / span 1;
+  grid-column: 19 / span 1;
+  background-color: black;
 }
 
-.d23{
-    grid-row: 5/span 1;
-    grid-column: 5/span 1;
-    background-color: black;
+.d21 {
+  grid-row: 5 / span 1;
+  grid-column: 1 / span 1;
+  background-color: black;
+}
+.d22 {
+  grid-row: 5 / span 1;
+  grid-column: 3 / span 1;
+  background-color: black;
 }
 
-.d24{
-    grid-row: 5/span 1;
-    grid-column: 7/span 1;
-    background-color: black;
+.d23 {
+  grid-row: 5 / span 1;
+  grid-column: 5 / span 1;
+  background-color: black;
 }
 
-.d25{
-    grid-row: 5/span 1;
-    grid-column: 9/span 1;
-    background-color: black;
-}
-.d26{
-    grid-row: 5/span 1;
-    grid-column: 11/span 1;
-    background-color: black;
+.d24 {
+  grid-row: 5 / span 1;
+  grid-column: 7 / span 1;
+  background-color: black;
 }
 
-.d27{
-    grid-row: 5/span 1;
-    grid-column: 13/span 1;
-    background-color: black;
+.d25 {
+  grid-row: 5 / span 1;
+  grid-column: 9 / span 1;
+  background-color: black;
 }
-.d28{
-    grid-row: 5/span 1;
-    grid-column: 15/span 1;
-    background-color: black;
-}
-
-.d29{
-    grid-row: 5/span 1;
-    grid-column: 17/span 1;
-    background-color: black;
-}
-.d30{
-    grid-row: 5/span 1;
-    grid-column: 19/span 1;
-    background-color: black;
+.d26 {
+  grid-row: 5 / span 1;
+  grid-column: 11 / span 1;
+  background-color: black;
 }
 
-.d31{
-    grid-row: 7/span 1;
-    grid-column: 1/span 1;
-    background-color: red;
+.d27 {
+  grid-row: 5 / span 1;
+  grid-column: 13 / span 1;
+  background-color: black;
 }
-.d32{
-    grid-row: 7/span 1;
-    grid-column: 3/span 1;
-    background-color: red;
-}
-
-.d33{
-    grid-row: 7/span 1;
-    grid-column: 5/span 1;
-    background-color: black;
-}
-.d34{
-    grid-row: 7/span 1;
-    grid-column: 7/span 1;
-    background-color: black;
+.d28 {
+  grid-row: 5 / span 1;
+  grid-column: 15 / span 1;
+  background-color: black;
 }
 
-.d35{
-    grid-row: 7/span 1;
-    grid-column: 9/span 1;
-    background-color: black;
+.d29 {
+  grid-row: 5 / span 1;
+  grid-column: 17 / span 1;
+  background-color: black;
 }
-.d36{
-    grid-row: 7/span 1;
-    grid-column: 11/span 1;
-    background-color: black;
-}
-
-.d37{
-    grid-row: 7/span 1;
-    grid-column: 13/span 1;
-    background-color: black;
-}
-.d38{
-    grid-row: 7/span 1;
-    grid-column: 15/span 1;
-    background-color: black;
+.d30 {
+  grid-row: 5 / span 1;
+  grid-column: 19 / span 1;
+  background-color: black;
 }
 
-.d39{
-    grid-row: 7/span 1;
-    grid-column: 17/span 1;
-    background-color: black;
+.d31 {
+  grid-row: 7 / span 1;
+  grid-column: 1 / span 1;
+  background-color: red;
 }
-.d40{
-    grid-row: 7/span 1;
-    grid-column: 19/span 1;
-    background-color: black;
-}
-
-.d41{
-    grid-row: 9/span 1;
-    grid-column: 1/span 1;
-    background-color: black;
-}
-.d42{
-    grid-row: 9/span 1;
-    grid-column: 3/span 1;
-    background-color: black;
+.d32 {
+  grid-row: 7 / span 1;
+  grid-column: 3 / span 1;
+  background-color: red;
 }
 
-.d43{
-    grid-row: 9/span 1;
-    grid-column: 5/span 1;
-    background-color: red;
+.d33 {
+  grid-row: 7 / span 1;
+  grid-column: 5 / span 1;
+  background-color: black;
 }
-.d44{
-    grid-row: 9/span 1;
-    grid-column: 7/span 1;
-    background-color: red;
-}
-
-.d45{
-    grid-row: 9/span 1;
-    grid-column: 9/span 1;
-    background-color: red;
+.d34 {
+  grid-row: 7 / span 1;
+  grid-column: 7 / span 1;
+  background-color: black;
 }
 
-.d46{
-    grid-row: 9/span 1;
-    grid-column: 11/span 1;
-    background-color: red;
+.d35 {
+  grid-row: 7 / span 1;
+  grid-column: 9 / span 1;
+  background-color: black;
 }
-.d47{
-    grid-row: 9/span 1;
-    grid-column: 13/span 1;
-    background-color: red;
-}
-
-.d48{
-    grid-row: 9/span 1;
-    grid-column: 15/span 1;
-    background-color: red;
+.d36 {
+  grid-row: 7 / span 1;
+  grid-column: 11 / span 1;
+  background-color: black;
 }
 
-.d49{
-    grid-row: 9/span 1;
-    grid-column: 17/span 1;
-    background-color: red;
+.d37 {
+  grid-row: 7 / span 1;
+  grid-column: 13 / span 1;
+  background-color: black;
+}
+.d38 {
+  grid-row: 7 / span 1;
+  grid-column: 15 / span 1;
+  background-color: black;
 }
 
-.d50{
-    grid-row: 9/span 1;
-    grid-column: 19/span 1;
-    background-color: red;
+.d39 {
+  grid-row: 7 / span 1;
+  grid-column: 17 / span 1;
+  background-color: black;
+}
+.d40 {
+  grid-row: 7 / span 1;
+  grid-column: 19 / span 1;
+  background-color: black;
 }
 
-[class *="dataOne"]{
-    background-color: black;
+.d41 {
+  grid-row: 9 / span 1;
+  grid-column: 1 / span 1;
+  background-color: black;
+}
+.d42 {
+  grid-row: 9 / span 1;
+  grid-column: 3 / span 1;
+  background-color: black;
 }
 
-
-
-[class *="data"]
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+.d43 {
+  grid-row: 9 / span 1;
+  grid-column: 5 / span 1;
+  background-color: red;
+}
+.d44 {
+  grid-row: 9 / span 1;
+  grid-column: 7 / span 1;
+  background-color: red;
 }
 
-#bMain{
-    box-shadow: 0px 0px 20px 10px lightblue;
-
-}
-#bMainThree{
-    box-shadow: 0px 0px 20px 10px gold;
-    border: 3px solid green;
-    position: relative;
-
+.d45 {
+  grid-row: 9 / span 1;
+  grid-column: 9 / span 1;
+  background-color: red;
 }
 
-[class *="pp"]{
-    background-color: lightblue;
+.d46 {
+  grid-row: 9 / span 1;
+  grid-column: 11 / span 1;
+  background-color: red;
+}
+.d47 {
+  grid-row: 9 / span 1;
+  grid-column: 13 / span 1;
+  background-color: red;
 }
 
-[class *="foo"]{
-    background-color: seagreen;
-}
-.dN{
-    grid-row: 1/span 1;
-    grid-column: 17/span 1;
-    background-image: url("./images/aircraft-carrier.png");
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.d123{
-    grid-row: 3/span 1;
-    grid-column: 1/span 3;
-    background-color: lightblue;
-    background-image: url("./images/carrier2.svg");
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.d2636{
-    grid-row: 5/span 3;
-    grid-column: 11/span 1;
-    background-color: lightblue;
-    background-image: url("./images/jet.png");
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.d2930{
-    grid-row: 5/span 1;
-    grid-column: 17/span 3;
-    background-color: lightblue;
-    background-image: url("./images/submarine.png");
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.dFour5{
-    grid-row: 1/span 1;
-    grid-column: 7/span 3;
-    background-color: lightblue;
-    background-image: url("./images/ship.png");
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.d2{
-    grid-row: 1/span 1;
-    grid-column: 3/span 1;
-    background-image: url("./images/pirate_ship3.svg");
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.d9{
-    grid-row: 1/span 1;
-    grid-column: 17/span 1;
-    background-image: url("./images/PirateShip.svg");
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
+.d48 {
+  grid-row: 9 / span 1;
+  grid-column: 15 / span 1;
+  background-color: red;
 }
 
-.dthirtyFour{
-    grid-row: 7/span 1;
-    grid-column: 7/span 1;
-    background-image: url("./images/PirateShip3.svg");
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.dfifty{
-    grid-row: 9/span 1;
-    grid-column: 19/span 1;
-    background-image: url("./images/mystica_Pirate-ship.svg");
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
+.d49 {
+  grid-row: 9 / span 1;
+  grid-column: 17 / span 1;
+  background-color: red;
 }
 
-.gameLogs{
-    position: absolute;
-    width: 200px;
-    height: 50vh;
-    top: 27%;
-    color: red;
-    font-size: 16px;
-}
-#Playename{
-    color: #19c304;
-    text-shadow: 2px 2px 4px red;
-    font-family: cursive;
-}
-h2{
-    text-align: center;
-    margin: 0%;
-
-}
-h3{
-    text-align: center;
-    margin: 0%;
-    text-decoration:underline;
-}
-ul{
-    margin-left: 30px;
+.d50 {
+  grid-row: 9 / span 1;
+  grid-column: 19 / span 1;
+  background-color: red;
 }
 
+[class*="dataOne"] {
+  background-color: black;
+}
 
-.sound{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: darkred;
-    border-radius: 50%;
-    right: 10%;
-    top: 100px;
+[class*="data"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#bMain {
+  box-shadow: 0px 0px 20px 10px lightblue;
+}
+#bMainThree {
+  box-shadow: 0px 0px 20px 10px gold;
+  border: 3px solid green;
+  position: relative;
+}
+
+[class*="pp"] {
+  background-color: lightblue;
+}
+
+[class*="foo"] {
+  background-color: seagreen;
+}
+.dN {
+  grid-row: 1 / span 1;
+  grid-column: 17 / span 1;
+  background-image: url("./images/aircraft-carrier.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.d123 {
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 3;
+  background-color: lightblue;
+  background-image: url("./images/carrier2.svg");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.d2636 {
+  grid-row: 5 / span 3;
+  grid-column: 11 / span 1;
+  background-color: lightblue;
+  background-image: url("./images/jet.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.d2930 {
+  grid-row: 5 / span 1;
+  grid-column: 17 / span 3;
+  background-color: lightblue;
+  background-image: url("./images/submarine.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.dFour5 {
+  grid-row: 1 / span 1;
+  grid-column: 7 / span 3;
+  background-color: lightblue;
+  background-image: url("./images/ship.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.d2 {
+  grid-row: 1 / span 1;
+  grid-column: 3 / span 1;
+  background-image: url("./images/pirate_ship3.svg");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.d9 {
+  grid-row: 1 / span 1;
+  grid-column: 17 / span 1;
+  background-image: url("./images/PirateShip.svg");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.dthirtyFour {
+  grid-row: 7 / span 1;
+  grid-column: 7 / span 1;
+  background-image: url("./images/PirateShip3.svg");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.dfifty {
+  grid-row: 9 / span 1;
+  grid-column: 19 / span 1;
+  background-image: url("./images/mystica_Pirate-ship.svg");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.gameLogs {
+  position: absolute;
+  width: 200px;
+  height: 50vh;
+  top: 27%;
+  color: red;
+  font-size: 16px;
+}
+#Playename {
+  color: #19c304;
+  text-shadow: 2px 2px 4px red;
+  font-family: cursive;
+}
+h2 {
+  text-align: center;
+  margin: 0%;
+}
+h3 {
+  text-align: center;
+  margin: 0%;
+  text-decoration: underline;
+}
+ul {
+  margin-left: 30px;
+}
+
+.sound {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: darkred;
+  border-radius: 50%;
+  right: 10%;
+  top: 100px;
 }
 
 @keyframes bomb {
-   
-    from {
-        transform: translateY(0vh); 
-    }
-    to {
-        transform: translateY(50vh); 
-    }
+  from {
+    transform: translateY(0vh);
+  }
+  to {
+    transform: translateY(50vh);
+  }
 }
 
+#mysvg {
+  width: 100px;
+  height: 100px;
+  border: 1px solid darkblue;
+  background-image: url("../battleship/images/bomb-balloons.svg");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation-name: bomb;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: 3%;
+  left: 37%;
+  z-index: 10;
+}
 
-#mysvg{
-    width: 100px;
-    height: 100px;
-    border: 1px solid darkblue;
-    background-image: url("../battleship/images/bomb-balloons.svg");;
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation-name: bomb;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count:infinite;
-    position: absolute;
-    top: 3%;
-    left: 37%;
-    z-index: 10;
+audio {
+  border: 2px solid maroon;
 }
