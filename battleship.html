@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./battleship.css">
+    <link rel="shortcut icon" href="../es6/favicon.ico" type="image/x-icon">
+    <title>Testing Page</title>
+    <style id="styleId">
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+    </style>
+</head>
+
+<body>
+
+
+    <aside class="thinLine" id="thinLine">
+               
+               <!--
+                 <audio src="./sound/pirates_of_the_caribbean_theme_song_mp3_27596.mp3" autoplay loop >
+                    <p>dont support</p>
+                    <embed src="./sound/pirates_of_the_caribbean_theme_song_mp3_27596.mp3" height="90" width="180" hidden="true" type="">
+                </audio>
+               -->
+               
+        <main class="thinmain">
+            <section>BATTLE SHIP</section>
+            <section>
+                <img src="./images/mystica_Pirate-ship.svg" alt="">
+            </section>
+            <section class="third"><button  type="submit" id="myBut">Start Here</button></section>
+        </main>
+
+    </aside>
+    <aside class="playerSelection" id="playerSelection">
+         <section class="playerSec">
+            <h1>Enter Player's Name</h1>
+        <p class="inputP"><input type="text" name="" id="username" placeholder="player's name"></p>
+        <button class="playerButton" id="playerButtonn">Proceed !!!</button>
+         </section>
+    </aside>
+
+     <div class="allContainer" id="allContainer">
+        <section class="gameContent" id="one">
+            <div id="animationPlane"></div>
+            <div class="heading">Player One </div>
+            <main class="bMain" id="bMain">
+             <section class="secOne"></section>
+             <section class="secTwo"></section>
+             <section class="secThree"></section>
+             <section class="secFour"></section>
+             <section class="secFive"></section>
+             <section class="secSix"></section>
+             <section class="secSeven"></section>
+             <section class="secEight"></section>
+             <section class="secNine"></section>
+             <section class="secTen"></section>
+             <section class="RsecOne"></section>
+             <section class="RsecTwo"></section>
+             <section class="RsecThree"></section>
+             <section class="RsecFour"></section>
+             <section class="RsecFive"></section>
+             <section class="RsecSix"></section>
+             <section class="RsecSeven"></section>
+             <section class="RRsecEight"></section>
+             <section class="RsecNine"></section>
+             <section class="RsecTen"></section>
+             <div class="dataOne dOne pp"></div>
+             <div class="dataOne dTwo pp"></div>
+             <div class="dataOne dThree pp"></div>
+             <div class="dataOne dFour5 pp"></div>
+             <div class="dataOne dSix pp"></div>
+             <div class="dataOne dSeven pp"></div>
+             <div class="dataOne deight pp"></div>
+             <div class="dataOne dN pp"></div>
+             <div class="dataOne dTen pp"></div>
+             <div class="dataOne d123 pp"></div>
+             <div class="dataOne d13 pp"></div>
+             <div class="dataOne d14 pp"></div>
+             <div class="dataOne d15 pp"></div>
+             <div class="dataOne d16 pp"></div>
+             <div class="dataOne d17 pp"></div>
+             <div class="dataOne d18 pp"></div>
+             <div class="dataOne d19 pp"></div>
+             <div class="dataOne d20 pp"></div>
+             <div class="dataOne d21 pp"></div>
+             <div class="dataOne d22 pp"></div>
+             <div class="dataOne d23 pp"></div>
+             <div class="dataOne d24 pp"></div>
+             <div class="dataOne d25 pp"></div>
+             <div class="dataOne d2636 pp"></div>
+             <div class="dataOne d27 pp"></div>
+             <div class="dataOne d28 pp"></div>
+             <div class="dataOne d2930 pp"></div>
+             <div class="dataOne d31 pp32"></div>
+             <div class="dataOne d32 pp33"></div>
+             <div class="dataOne d33 pp34"></div>
+             <div class="dataOne d34 pp35"></div>
+             <div class="dataOne d35 pp36"></div>
+             <div class="dataOne d37 pp37"></div>
+             <div class="dataOne d38 pp38"></div>
+             <div class="dataOne d39 pp39"></div>
+             <div class="dataOne d40 pp40"></div>
+             <div class="dataOne d41 pp41"></div>
+             <div class="dataOne d42 pp42"></div>
+             <div class="dataOne d43 pp43"></div>
+             <div class="dataOne d44 pp44"></div>
+             <div class="dataOne d45 pp45"></div>
+             <div class="dataOne d46 p4pp6"></div>
+             <div class="dataOne d47 pp47"></div>
+             <div class="dataOne d48 pp8"></div>
+             <div class="dataOne d49 pp49"></div>
+             <div class="dataOne d50 pp50"></div>
+            </main>
+           
+             </section>
+             <!----->
+
+
+             
+
+
+
+             <section class="gameContent" id="two">
+                <div class="gameLogs">
+                     <h2>Game logs </h2>
+                     <h3 id="Playename"></h3>
+                    <section>
+                            
+                        <ul>
+                            <li>on target</li>
+                            <li>out of target</li>
+                            <li>on target</li>
+                            <li>on target</li>
+                            <li>on target</li>
+                            <li>on target</li>
+                            <li>out of target</li>
+                            <li>on target</li>
+                            <li>on target</li>
+                            <li>on target</li>
+                        </ul>
+
+                    </section>
+                </div>
+                <div class="heading" id="headingMiddle">Battle arena </div>
+                <main class="bMain" id="middle-bMain">
+                 <section class="secOne" id="secOne"></section>
+                 <section class="secTwo"></section>
+                 <section class="secThree"></section>
+                 <section class="secFour"></section>
+                 <section class="secFive"></section>
+                 <section class="secSix"></section>
+                 <section class="secSeven"></section>
+                 <section class="secEight"></section>
+                 <section class="secNine"></section>
+                 <section class="secTen"></section>
+                 <section class="RsecOne"></section>
+                 <section class="RsecTwo"></section>
+                 <section class="RsecThree"></section>
+                 <section class="RsecFour"></section>
+                 <section class="RsecFive"></section>
+                 <section class="RsecSix"></section>
+                 <section class="RsecSeven"></section>
+                 <section class="RRsecEight"></section>
+                 <section class="RsecNine"></section>
+                 <section class="RsecTen"></section>
+
+                  <div class="dataOne dOne"></div>
+                 <div class="dataOne dTwo"></div>
+                 <div class="dataOne dThree"></div>
+                 <div class="dataOne dFour"></div>
+                 <div class="dataOne dFive"></div>
+                 <div class="dataOne dSix"></div>
+                 <div class="dataOne dSeven"></div>
+                 <div class="dataOne deight"></div>
+                 <div class="dataOne dNine"></div>
+                 <div class="dataOne dTen"></div>
+
+                 <div class="dataOne d11"></div>
+                 <div class="dataOne d12"></div>
+                 <div class="dataOne d13"></div>
+                 <div class="dataOne d14"></div>
+                 <div class="dataOne d15"></div>
+                 <div class="dataOne d16"></div>
+                 <div class="dataOne d17"></div>
+                 <div class="dataOne d18"></div>
+                 <div class="dataOne d19"></div>
+                 <div class="dataOne d20"></div>
+
+                 <div class="dataOne d21"></div>
+                 <div class="dataOne d22"></div>
+                 <div class="dataOne d23"></div>
+                 <div class="dataOne d24"></div>
+                 <div class="dataOne d25"></div>
+                 <div class="dataOne d26"></div>
+                 <div class="dataOne d27"></div>
+                 <div class="dataOne d28"></div>
+                 <div class="dataOne d29"></div>
+                 <div class="dataOne d30"></div>
+
+                 <div class="dataOne d31"></div>
+                 <div class="dataOne d32"></div>
+                 <div class="dataOne d33"></div>
+                 <div class="dataOne d34"></div>
+                 <div class="dataOne d35"></div>
+                 <div class="dataOne d36"></div>
+                 <div class="dataOne d37"></div>
+                 <div class="dataOne d38"></div>
+                 <div class="dataOne d39"></div>
+                 <div class="dataOne d40"></div>
+
+                 <div class="dataOne d41"></div>
+                 <div class="dataOne d42"></div>
+                 <div class="dataOne d43"></div>
+                 <div class="dataOne d44"></div>
+                 <div class="dataOne d45"></div>
+                 <div class="dataOne d46"></div>
+                 <div class="dataOne d47"></div>
+                 <div class="dataOne d48"></div>
+                 <div class="dataOne d49"></div>
+                 <div class="dataOne d50"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </main>
+                 </section>
+
+            <!----->
+
+
+            <section class="gameContent" id="three">
+                <div class="heading">Player Two </div>
+                 <main class="bMain" id="bMainThree">
+                  <div id="animationPlane"></div>
+                  <section id="mysvg" ></section>
+                 <section class="secOne"></section>
+                 <section class="secTwo"></section>
+                 <section class="secThree"></section>
+                 <section class="secFour"></section>
+                 <section class="secFive"></section>
+                 <section class="secSix"></section>
+                 <section class="secSeven"></section>
+                 <section class="secEight"></section>
+                 <section class="secNine"></section>
+                 <section class="secTen"></section>
+                 <section class="RsecOne"></section>
+                 <section class="RsecTwo"></section>
+                 <section class="RsecThree"></section>
+                 <section class="RsecFour"></section>
+                 <section class="RsecFive"></section>
+                 <section class="RsecSix"></section>
+                 <section class="RsecSeven"></section>
+                 <section class="RRsecEight"></section>
+                 <section class="RsecNine"></section>
+                 <section class="RsecTen"></section>
+
+
+                 <div class="dataOne dOne foo"></div>
+                 <div class="dataOne d2 foo"></div>
+                 <div class="dataOne dThree foo"></div>
+                 <div class="dataOne dFour foo"></div>
+                 <div class="dataOne dFive foo"></div>
+                 <div class="dataOne dSix foo"></div>
+                 <div class="dataOne dSeven foo"></div>
+                 <div class="dataOne deight foo"></div>
+                 <div class="dataOne d9 foo"></div>
+                 <div class="dataOne dTen foo"></div>
+
+                 <div class="dataOne d11 foo"></div>
+                 <div class="dataOne d12 foo"></div>
+                 <div class="dataOne d13 foo"></div>
+                 <div class="dataOne d14 foo"></div>
+                 <div class="dataOne d15 foo"></div>
+                 <div class="dataOne d16 foo"></div>
+                 <div class="dataOne d17 foo"></div>
+                 <div class="dataOne d18 foo"></div>
+                 <div class="dataOne d19 foo"></div>
+                 <div class="dataOne d20 foo"></div>
+
+                 <div class="dataOne d21 foo"></div>
+                 <div class="dataOne d22 foo"></div>
+                 <div class="dataOne d23 foo"></div>
+                 <div class="dataOne d24 foo"></div>
+                 <div class="dataOne d25 foo"></div>
+                 <div class="dataOne d26 foo"></div>
+                 <div class="dataOne d27 foo"></div>
+                 <div class="dataOne d28 foo"></div>
+                 <div class="dataOne d29 foo"></div>
+                 <div class="dataOne d30 foo"></div>
+
+                 <div class="dataOne d31 foo"></div>
+                 <div class="dataOne d32 foo"></div>
+                 <div class="dataOne d33 foo"></div>
+                 <div class="dataOne dthirtyFour foo"></div>
+                 <div class="dataOne d35 foo"></div>
+                 <div class="dataOne d36 foo"></div>
+                 <div class="dataOne d37 foo"></div>
+                 <div class="dataOne d38 foo"></div>
+                 <div class="dataOne d39 foo"></div>
+                 <div class="dataOne d40 foo"></div>
+
+                 <div class="dataOne d41 foo"></div>
+                 <div class="dataOne d42 foo"></div>
+                 <div class="dataOne d43 foo"></div>
+                 <div class="dataOne d44 foo"></div>
+                 <div class="dataOne d45 foo"></div>
+                 <div class="dataOne d46 foo"></div>
+                 <div class="dataOne d47 foo"></div>
+                 <div class="dataOne d48 foo"></div>
+                 <div class="dataOne d49 foo"></div>
+                 <div class="dataOne dfifty foo"></div>
+
+
+                </main>
+                 </section>
+     </div>
+
+
+    <script src="./battleship.js" type="text/javascript"></script>
+</body>
+
+</html>
